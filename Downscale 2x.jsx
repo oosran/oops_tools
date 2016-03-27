@@ -36,7 +36,7 @@ jpgSaveOptions.matte = MatteType.NONE
 jpgSaveOptions.quality = 12
 
 app.activeDocument.saveAs(jpgFile, jpgSaveOptions, true, Extension.LOWERCASE)
-//app.activeDocument.close(SaveOptions.DONOTSAVECHANGES);
+app.activeDocument.close(SaveOptions.DONOTSAVECHANGES);
 
 // Uncomment next line to get your silly non-pixel ruler back again
 // app.preferences.rulerUnits = orgRulerUnits
