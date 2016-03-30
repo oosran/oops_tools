@@ -27,7 +27,8 @@ var height = app.activeDocument.height
 var scalar = 2
 app.activeDocument.resizeImage( (width/scalar), (height/scalar), app.activeDocument.resolution, ResampleMethod.BICUBICSHARPER )
 
-var jpgFile = new File((fullName+ "_d2x.jpg"))
+
+var jpgFile = new File((fullName.substr( 0, fullName.lastIndexOf(".") )+ "_d2x.jpg"))
 var jpgSaveOptions = new JPEGSaveOptions()
 jpgSaveOptions.embedColorProfile = true
 jpgSaveOptions.formatOptions = FormatOptions.PROGRESSIVE
